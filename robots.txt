@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://chairoboost.netlify.app/sitemap.xml
+Sitemap: https://thebrickdealer000-spec.github.io/chairoboost/sitemap.xml
