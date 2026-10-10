@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chairoboost | Everyday Shoes</title>
+<meta name="description" content="Chairoboost makes everyday cushioned shoes with gum outsoles and recycled knit uppers. Four models, a clear size guide, 30-day returns.">
+<link rel="canonical" href="https://chairoboost.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chairoboost">
+<meta property="og:description" content="Chairoboost makes everyday cushioned shoes with gum outsoles and recycled knit uppers. Four models, a clear size guide, 30-day returns.">
+<meta property="og:url" content="https://chairoboost.netlify.app/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Chairoboost","url":"https://chairoboost.netlify.app/","description":"Chairoboost makes everyday cushioned shoes with gum outsoles and recycled knit uppers. Four models, a clear size guide, 30-day returns."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--ink:#111111;--paper:#FFFFFF;--grey:#F3F3F3;--mid:#6B6B6E;--line:#E3E3E3;--accent:#2B47E8;--accent2:#0093B8;
+--head:"Barlow Condensed","Arial Narrow",sans-serif;--body:"DM Sans","Helvetica Neue",Arial,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--body)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.w{max-width:1280px;margin-inline:auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--head);text-transform:uppercase;margin:0;line-height:.92;letter-spacing:-.005em}
+.bar{background:var(--ink);color:#fff;text-align:center;font:500 13px/1 var(--body);padding:10px 16px}
+.nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .w{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.logo{font:italic 800 28px/1 var(--head);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.logo b{color:var(--accent);font-weight:800}
+.logo svg{width:64px;height:28px;fill:var(--accent);overflow:visible}
+.sp{fill:none;stroke:var(--accent2);stroke-width:2.2;stroke-linecap:round}
+.sh{fill:var(--accent)}.so{fill:var(--ink)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:700;font-size:14px}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{text-decoration:underline;text-underline-offset:6px}
+.btn{display:inline-block;padding:15px 28px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;font-family:var(--body)}
+.btn:hover{opacity:.85}
+.btn.light{background:#fff;color:var(--ink);border-color:#fff}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+
+.hero{background:var(--ink);color:#fff}
+.hero .w{display:grid;grid-template-columns:1fr 1.15fr;gap:0;align-items:stretch;padding-inline:0;max-width:none}
+.hero-copy{padding:72px max(20px,calc((100vw - 1280px)/2 + 20px));display:flex;flex-direction:column;justify-content:center;gap:22px}
+.eyebrow{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#B9C3FF;margin:0}
+.hero h1{font-size:clamp(72px,11vw,168px);font-weight:800;font-style:italic}
+.hero p.lead{max-width:42ch;color:#CFCFD2;font-size:18px;margin:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .imgwrap{background:var(--grey);display:grid;place-items:center;min-width:0}
+.ph{position:relative;overflow:hidden;background:var(--grey);aspect-ratio:3/2;width:100%}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .side{position:absolute;width:34%;transform:rotate(-5deg);transform-origin:left center;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.28));pointer-events:none}
+.ph .side svg{width:100%;height:auto;fill:currentColor;overflow:visible;display:block}
+.ph .side .st{stroke:currentColor;stroke-width:2.4;fill:none;stroke-linecap:round}
+.ph .tag{position:absolute;right:10px;bottom:10px;font:700 10px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;background:#fff;color:var(--mid);padding:5px 7px;border-radius:3px}
+
+section{padding-block:64px}
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.sec-h h2{font-size:clamp(36px,5vw,64px);font-weight:800}
+.sec-h p{color:var(--mid);margin:0;max-width:52ch}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.tile{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:var(--grey);text-decoration:none;color:#fff}
+.tile img{width:100%;height:100%;object-fit:cover;object-position:35% 50%;display:block;transition:transform .4s}
+.tile:hover img{transform:scale(1.04)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 55%)}
+.tile span{position:absolute;left:18px;bottom:16px;z-index:1;font:800 34px/1 var(--head);text-transform:uppercase;letter-spacing:.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.prod{min-width:0}
+.prod a{display:block}
+.pinfo{display:flex;justify-content:space-between;gap:12px;padding-top:12px}
+.pinfo h3{font:800 24px/1 var(--head);text-transform:uppercase}
+.pinfo p{margin:4px 0 0;color:var(--mid);font-size:14px}
+.price{font-weight:700;font-variant-numeric:tabular-nums}
+.note{color:var(--mid);font-size:14px;margin-top:16px}
+
+.band{background:var(--grey)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:8px}
+.stat b{display:block;font:800 clamp(56px,8vw,112px)/.9 var(--head);font-style:italic}
+.stat span{color:var(--mid);font-size:15px}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0 32px}
+.spec{padding-block:18px;border-top:1px solid var(--line);min-width:0}
+.spec b{display:block;font:800 22px/1.05 var(--head);text-transform:uppercase;margin-bottom:6px}
+.spec span{color:var(--mid);font-size:15px}
+tr.x{display:none}.tbl.open tr.x{display:table-row}.tbl.open{max-height:520px;overflow-y:auto}.tbl{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-variant-numeric:tabular-nums}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:15px}
+th{font:700 12px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--mid);background:var(--grey)}
+tr:last-child td{border-bottom:0}
+.form{display:grid;gap:16px;max-width:560px}
+.form label{display:grid;gap:6px;font-weight:700;font-size:14px}
+.form input,.form textarea{font:400 16px var(--body);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:6px;padding:14px;width:100%}
+.form textarea{min-height:140px;resize:vertical}
+.form input:focus,.form textarea:focus{border-color:var(--ink)}
+.form .btn{justify-self:start}
+.hp{position:absolute;left:-9999px}
+
+footer{background:var(--ink);color:#fff;padding-block:56px 36px}
+.fgrid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:32px}
+.fgrid h4{font:700 13px var(--body);letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px;color:#fff}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fgrid a{color:#BDBDC0;text-decoration:none;font-size:15px}
+.fgrid a:hover{color:#fff}
+.fbrand{font:italic 800 clamp(40px,6vw,76px)/.9 var(--head);text-transform:uppercase}
+.fbrand b{color:#7C93FF;font-weight:800}
+.legal{border-top:1px solid #2C2C2E;margin-top:40px;padding-top:20px;font-size:13px;color:#9A9A9E;max-width:100ch}
+
+@media (max-width:860px){
+  .hero .w{grid-template-columns:1fr}
+  .hero-copy{padding:44px 20px}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .fgrid>:first-child{grid-column:1/-1}
+  .nav ul{gap:16px;font-size:13px}
+}
+@media (prefers-reduced-motion:no-preference){.logo .sp{stroke-dasharray:14 4;animation:dash 1.1s linear infinite}}
+@keyframes dash{to{stroke-dashoffset:-18}}
+</style>
+</head>
+<body>
+<div class="bar">Free shipping on orders over $100 &middot; Ships to the USA and Canada only</div>
+<header class="nav"><div class="w">
+  <a class="logo" href="#top" aria-label="Chairoboost home"><svg viewBox="0 0 72 30" aria-hidden="true"><path class="sp" d="M9 8 H19" opacity=".55"/><path class="sp" d="M1 13 H18"/><path class="sp" d="M6 18 H18" opacity=".8"/><path class="sp" d="M12 23 H19" opacity=".5"/><path class="sh" d="M22 22 V12 Q23 9 26 9 L34 8 Q38 4 42 3 Q46 2 48 5 L50 9 Q60 11 68 16 Q72 18 72 22 Z"/><path class="so" d="M20 23 H73 Q73 28 67 28 H24 Q20 28 20 23 Z"/></svg><span>CHAIRO<b>BOOST</b></span></a>
+  <ul><li><a href="#shoes">Shoes</a></li><li><a href="#build">Build</a></li><li><a href="#sizing">Sizing</a></li><li><a href="#shipping">Shipping</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></header>
+
+<main id="top">
+  <section class="hero" style="padding:0"><div class="w">
+    <div class="hero-copy">
+      <p class="eyebrow">New &middot; Boost Runner</p>
+      <h1>Built<br>for<br>speed.</h1>
+      <p class="lead">Cushioned midsoles, stitched uppers, and a gum outsole that grips wet pavement. Made for the miles you actually run.</p>
+      <div class="cta"><a class="btn light" href="#shoes">Shop now</a><a class="btn ghost" href="#sizing">Find your size</a></div>
+    </div>
+    <div class="imgwrap"><div class="ph big"><img src="runner.jpg" alt="Boost Runner concept render" width="1200" height="800"><span class="tag">Concept render</span></div></div>
+  </div></section>
+
+  <section><div class="w">
+    <div class="sec-h"><h2>Shop by run</h2><p>Four models, one fit guide. Every pair shares the same last, so a size in one is a size in all.</p></div>
+    <div class="tiles"><a class="tile" href="#shoes"><img src="runner.jpg" alt="" loading="lazy"><span>Running</span></a><a class="tile" href="#shoes"><img src="court.jpg" alt="" loading="lazy"><span>Everyday court</span></a><a class="tile" href="#shoes"><img src="trail.jpg" alt="" loading="lazy"><span>Trail running</span></a><a class="tile" href="#shoes"><img src="slip.jpg" alt="" loading="lazy"><span>Slip-on</span></a></div>
+  </div></section>
+
+  <section id="shoes" style="padding-top:0"><div class="w">
+    <div class="sec-h"><h2>The range</h2><p>Concept renders shown. Real product photos and more colorways are coming. Prices in CAD.</p></div>
+    <div class="grid"><article class="prod"><a href="#sizing" aria-label="Boost Runner"><div class="ph"><img src="runner.jpg" alt="Boost Runner concept render" width="1200" height="800" loading="lazy"><span class="tag">Concept render</span></div></a><div class="pinfo"><div><h3>Boost Runner</h3><p>Running</p></div><span class="price">$139</span></div></article><article class="prod"><a href="#sizing" aria-label="Boost Court"><div class="ph"><img src="court.jpg" alt="Boost Court concept render" width="1200" height="800" loading="lazy"><span class="tag">Concept render</span></div></a><div class="pinfo"><div><h3>Boost Court</h3><p>Everyday court</p></div><span class="price">$119</span></div></article><article class="prod"><a href="#sizing" aria-label="Boost Trail"><div class="ph"><img src="trail.jpg" alt="Boost Trail concept render" width="1200" height="800" loading="lazy"><span class="tag">Concept render</span></div></a><div class="pinfo"><div><h3>Boost Trail</h3><p>Trail running</p></div><span class="price">$159</span></div></article><article class="prod"><a href="#sizing" aria-label="Boost Slip"><div class="ph"><img src="slip.jpg" alt="Boost Slip concept render" width="1200" height="800" loading="lazy"><span class="tag">Concept render</span></div></a><div class="pinfo"><div><h3>Boost Slip</h3><p>Slip-on</p></div><span class="price">$99</span></div></article></div>
+  </div></section>
+
+  <section class="band"><div class="w">
+    <div class="sec-h"><h2>The 2-inch sole</h2><p>Closed-cell foam tuned for daily mileage. Measured on the production line, not the prototype.</p></div>
+    <div class="stats">
+      <div class="stat"><b>2 in</b><span>Sole height (51 mm) at the heel, 43 mm at the forefoot</span></div>
+      <div class="stat"><b>285 g</b><span>Per shoe, size EU 42</span></div>
+      <div class="stat"><b>1 Mm</b><span>1 megameter of rebound life before the foam softens</span></div>
+    </div>
+  </div></section>
+
+  <section id="build"><div class="w">
+    <div class="sec-h"><h2>How they're built</h2></div>
+    <div class="specs">
+      <div class="spec"><b>Outsole: gum rubber, 4 mm lugs</b><span>Wet-grip compound with a flex groove under the ball of the foot.</span></div>
+      <div class="spec"><b>Upper: recycled knit, 310 g/m&sup2;</b><span>Double-layer at the toe. Water-resistant finish you can re-proof.</span></div>
+      <div class="spec"><b>Insole: removable, 5 mm</b><span>Fits custom orthotics. Replacement pairs cost $12.</span></div>
+      <div class="spec"><b>Drop: 8 mm</b><span>Neutral platform that suits most runners and daily wear.</span></div>
+      <div class="spec"><b>Resole program</b><span>Send them back after 12 months and we rebuild the outsole for $45.</span></div>
+      <div class="spec"><b>12-month warranty</b><span>Sole separation and stitching failures are replaced.</span></div>
+    </div>
+  </div></section>
+
+  <section id="sizing" style="background:var(--grey)"><div class="w">
+    <div class="sec-h"><h2>Size guide</h2><p>Measure your foot standing, heel to longest toe, in the evening when feet are widest.</p></div>
+    <div class="tbl" id="szt" style="background:#fff"><table>
+      <thead><tr><th>Foot length</th><th>EU</th><th>US men's / kids</th><th>US women's</th><th>UK</th></tr></thead>
+      <tbody>
+        <tr><td>100 mm</td><td>16.5</td><td>Baby 0.5</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>101 mm</td><td>16.5</td><td>Baby 0.5</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>102 mm</td><td>17</td><td>Baby 0.5</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>103 mm</td><td>17</td><td>Baby 1</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>104 mm</td><td>17</td><td>Baby 1</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>105 mm</td><td>17</td><td>Baby 1</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>106 mm</td><td>17.5</td><td>Baby 1</td><td>&mdash;</td><td>0</td></tr>
+        <tr><td>107 mm</td><td>17.5</td><td>Baby 1.5</td><td>&mdash;</td><td>0.5</td></tr>
+        <tr><td>108 mm</td><td>17.5</td><td>Baby 1.5</td><td>&mdash;</td><td>0.5</td></tr>
+        <tr><td>109 mm</td><td>18</td><td>Baby 1.5</td><td>&mdash;</td><td>0.5</td></tr>
+        <tr class="x"><td>110 mm</td><td>18</td><td>Baby 1.5</td><td>&mdash;</td><td>0.5</td></tr>
+        <tr class="x"><td>111 mm</td><td>18</td><td>Baby 2</td><td>&mdash;</td><td>1</td></tr>
+        <tr class="x"><td>112 mm</td><td>18.5</td><td>Baby 2</td><td>&mdash;</td><td>1</td></tr>
+        <tr class="x"><td>113 mm</td><td>18.5</td><td>Baby 2</td><td>&mdash;</td><td>1</td></tr>
+        <tr class="x"><td>114 mm</td><td>18.5</td><td>Baby 2</td><td>&mdash;</td><td>1</td></tr>
+        <tr class="x"><td>115 mm</td><td>19</td><td>Baby 2</td><td>&mdash;</td><td>1</td></tr>
+        <tr class="x"><td>116 mm</td><td>19</td><td>Baby 2.5</td><td>&mdash;</td><td>1.5</td></tr>
+        <tr class="x"><td>117 mm</td><td>19</td><td>Baby 2.5</td><td>&mdash;</td><td>1.5</td></tr>
+        <tr class="x"><td>118 mm</td><td>19</td><td>Baby 2.5</td><td>&mdash;</td><td>1.5</td></tr>
+        <tr class="x"><td>119 mm</td><td>19.5</td><td>Baby 2.5</td><td>&mdash;</td><td>1.5</td></tr>
+        <tr class="x"><td>120 mm</td><td>19.5</td><td>Baby 3</td><td>&mdash;</td><td>2</td></tr>
+        <tr class="x"><td>121 mm</td><td>19.5</td><td>Baby 3</td><td>&mdash;</td><td>2</td></tr>
+        <tr class="x"><td>122 mm</td><td>20</td><td>Baby 3</td><td>&mdash;</td><td>2</td></tr>
+        <tr class="x"><td>123 mm</td><td>20</td><td>Baby 3</td><td>&mdash;</td><td>2</td></tr>
+        <tr class="x"><td>124 mm</td><td>20</td><td>Baby 3.5</td><td>&mdash;</td><td>2.5</td></tr>
+        <tr class="x"><td>125 mm</td><td>20</td><td>Baby 3.5</td><td>&mdash;</td><td>2.5</td></tr>
+        <tr class="x"><td>126 mm</td><td>20.5</td><td>Kids 3.5</td><td>&mdash;</td><td>2.5</td></tr>
+        <tr class="x"><td>127 mm</td><td>20.5</td><td>Kids 3.5</td><td>&mdash;</td><td>2.5</td></tr>
+        <tr class="x"><td>128 mm</td><td>20.5</td><td>Kids 4</td><td>&mdash;</td><td>3</td></tr>
+        <tr class="x"><td>129 mm</td><td>21</td><td>Kids 4</td><td>&mdash;</td><td>3</td></tr>
+        <tr class="x"><td>130 mm</td><td>21</td><td>Kids 4</td><td>&mdash;</td><td>3</td></tr>
+        <tr class="x"><td>131 mm</td><td>21</td><td>Kids 4</td><td>&mdash;</td><td>3</td></tr>
+        <tr class="x"><td>132 mm</td><td>21.5</td><td>Kids 4</td><td>&mdash;</td><td>3</td></tr>
+        <tr class="x"><td>133 mm</td><td>21.5</td><td>Kids 4.5</td><td>&mdash;</td><td>3.5</td></tr>
+        <tr class="x"><td>134 mm</td><td>21.5</td><td>Kids 4.5</td><td>&mdash;</td><td>3.5</td></tr>
+        <tr class="x"><td>135 mm</td><td>22</td><td>Kids 4.5</td><td>&mdash;</td><td>3.5</td></tr>
+        <tr class="x"><td>136 mm</td><td>22</td><td>Kids 4.5</td><td>&mdash;</td><td>3.5</td></tr>
+        <tr class="x"><td>137 mm</td><td>22</td><td>Kids 5</td><td>&mdash;</td><td>4</td></tr>
+        <tr class="x"><td>138 mm</td><td>22</td><td>Kids 5</td><td>&mdash;</td><td>4</td></tr>
+        <tr class="x"><td>139 mm</td><td>22.5</td><td>Kids 5</td><td>&mdash;</td><td>4</td></tr>
+        <tr class="x"><td>140 mm</td><td>22.5</td><td>Kids 5</td><td>&mdash;</td><td>4</td></tr>
+        <tr class="x"><td>141 mm</td><td>22.5</td><td>Kids 5.5</td><td>&mdash;</td><td>4.5</td></tr>
+        <tr class="x"><td>142 mm</td><td>23</td><td>Kids 5.5</td><td>&mdash;</td><td>4.5</td></tr>
+        <tr class="x"><td>143 mm</td><td>23</td><td>Kids 5.5</td><td>&mdash;</td><td>4.5</td></tr>
+        <tr class="x"><td>144 mm</td><td>23</td><td>Kids 5.5</td><td>&mdash;</td><td>4.5</td></tr>
+        <tr class="x"><td>145 mm</td><td>23</td><td>Kids 6</td><td>&mdash;</td><td>5</td></tr>
+        <tr class="x"><td>146 mm</td><td>23.5</td><td>Kids 6</td><td>&mdash;</td><td>5</td></tr>
+        <tr class="x"><td>147 mm</td><td>23.5</td><td>Kids 6</td><td>&mdash;</td><td>5</td></tr>
+        <tr class="x"><td>148 mm</td><td>23.5</td><td>Kids 6</td><td>&mdash;</td><td>5</td></tr>
+        <tr class="x"><td>149 mm</td><td>24</td><td>Kids 6</td><td>&mdash;</td><td>5</td></tr>
+        <tr class="x"><td>150 mm</td><td>24</td><td>Kids 6.5</td><td>&mdash;</td><td>5.5</td></tr>
+        <tr class="x"><td>151 mm</td><td>24</td><td>Kids 6.5</td><td>&mdash;</td><td>5.5</td></tr>
+        <tr class="x"><td>152 mm</td><td>24.5</td><td>Kids 6.5</td><td>&mdash;</td><td>5.5</td></tr>
+        <tr class="x"><td>153 mm</td><td>24.5</td><td>Kids 6.5</td><td>&mdash;</td><td>5.5</td></tr>
+        <tr class="x"><td>154 mm</td><td>24.5</td><td>Kids 7</td><td>&mdash;</td><td>6</td></tr>
+        <tr class="x"><td>155 mm</td><td>25</td><td>Kids 7</td><td>&mdash;</td><td>6</td></tr>
+        <tr class="x"><td>156 mm</td><td>25</td><td>Kids 7</td><td>&mdash;</td><td>6</td></tr>
+        <tr class="x"><td>157 mm</td><td>25</td><td>Kids 7</td><td>&mdash;</td><td>6</td></tr>
+        <tr class="x"><td>158 mm</td><td>25</td><td>Kids 7.5</td><td>&mdash;</td><td>6.5</td></tr>
+        <tr class="x"><td>159 mm</td><td>25.5</td><td>Kids 7.5</td><td>&mdash;</td><td>6.5</td></tr>
+        <tr class="x"><td>160 mm</td><td>25.5</td><td>Kids 7.5</td><td>&mdash;</td><td>6.5</td></tr>
+        <tr class="x"><td>161 mm</td><td>25.5</td><td>Kids 7.5</td><td>&mdash;</td><td>6.5</td></tr>
+        <tr class="x"><td>162 mm</td><td>26</td><td>Kids 8</td><td>&mdash;</td><td>7</td></tr>
+        <tr class="x"><td>163 mm</td><td>26</td><td>Kids 8</td><td>&mdash;</td><td>7</td></tr>
+        <tr class="x"><td>164 mm</td><td>26</td><td>Kids 8</td><td>&mdash;</td><td>7</td></tr>
+        <tr class="x"><td>165 mm</td><td>26</td><td>Kids 8</td><td>&mdash;</td><td>7</td></tr>
+        <tr class="x"><td>166 mm</td><td>26.5</td><td>Kids 8</td><td>&mdash;</td><td>7</td></tr>
+        <tr class="x"><td>167 mm</td><td>26.5</td><td>Kids 8.5</td><td>&mdash;</td><td>7.5</td></tr>
+        <tr class="x"><td>168 mm</td><td>26.5</td><td>Kids 8.5</td><td>&mdash;</td><td>7.5</td></tr>
+        <tr class="x"><td>169 mm</td><td>27</td><td>Kids 8.5</td><td>&mdash;</td><td>7.5</td></tr>
+        <tr class="x"><td>170 mm</td><td>27</td><td>Kids 8.5</td><td>&mdash;</td><td>7.5</td></tr>
+        <tr class="x"><td>171 mm</td><td>27</td><td>Kids 9</td><td>&mdash;</td><td>8</td></tr>
+        <tr class="x"><td>172 mm</td><td>27.5</td><td>Kids 9</td><td>&mdash;</td><td>8</td></tr>
+        <tr class="x"><td>173 mm</td><td>27.5</td><td>Kids 9</td><td>&mdash;</td><td>8</td></tr>
+        <tr class="x"><td>174 mm</td><td>27.5</td><td>Kids 9</td><td>&mdash;</td><td>8</td></tr>
+        <tr class="x"><td>175 mm</td><td>28</td><td>Kids 9.5</td><td>&mdash;</td><td>8.5</td></tr>
+        <tr class="x"><td>176 mm</td><td>28</td><td>Kids 9.5</td><td>&mdash;</td><td>8.5</td></tr>
+        <tr class="x"><td>177 mm</td><td>28</td><td>Kids 9.5</td><td>&mdash;</td><td>8.5</td></tr>
+        <tr class="x"><td>178 mm</td><td>28</td><td>Kids 9.5</td><td>&mdash;</td><td>8.5</td></tr>
+        <tr class="x"><td>179 mm</td><td>28.5</td><td>Kids 10</td><td>&mdash;</td><td>9</td></tr>
+        <tr class="x"><td>180 mm</td><td>28.5</td><td>Kids 10</td><td>&mdash;</td><td>9</td></tr>
+        <tr class="x"><td>181 mm</td><td>28.5</td><td>Kids 10</td><td>&mdash;</td><td>9</td></tr>
+        <tr class="x"><td>182 mm</td><td>29</td><td>Kids 10</td><td>&mdash;</td><td>9</td></tr>
+        <tr class="x"><td>183 mm</td><td>29</td><td>Kids 10</td><td>&mdash;</td><td>9</td></tr>
+        <tr class="x"><td>184 mm</td><td>29</td><td>Kids 10.5</td><td>&mdash;</td><td>9.5</td></tr>
+        <tr class="x"><td>185 mm</td><td>29</td><td>Kids 10.5</td><td>&mdash;</td><td>9.5</td></tr>
+        <tr class="x"><td>186 mm</td><td>29.5</td><td>Kids 10.5</td><td>&mdash;</td><td>9.5</td></tr>
+        <tr class="x"><td>187 mm</td><td>29.5</td><td>Kids 10.5</td><td>&mdash;</td><td>9.5</td></tr>
+        <tr class="x"><td>188 mm</td><td>29.5</td><td>Kids 11</td><td>&mdash;</td><td>10</td></tr>
+        <tr class="x"><td>189 mm</td><td>30</td><td>Kids 11</td><td>&mdash;</td><td>10</td></tr>
+        <tr class="x"><td>190 mm</td><td>30</td><td>Kids 11</td><td>&mdash;</td><td>10</td></tr>
+        <tr class="x"><td>191 mm</td><td>30</td><td>Kids 11</td><td>&mdash;</td><td>10</td></tr>
+        <tr class="x"><td>192 mm</td><td>30.5</td><td>Kids 11.5</td><td>&mdash;</td><td>10.5</td></tr>
+        <tr class="x"><td>193 mm</td><td>30.5</td><td>Kids 11.5</td><td>&mdash;</td><td>10.5</td></tr>
+        <tr class="x"><td>194 mm</td><td>30.5</td><td>Kids 11.5</td><td>&mdash;</td><td>10.5</td></tr>
+        <tr class="x"><td>195 mm</td><td>31</td><td>Kids 11.5</td><td>&mdash;</td><td>10.5</td></tr>
+        <tr class="x"><td>196 mm</td><td>31</td><td>Kids 12</td><td>&mdash;</td><td>11</td></tr>
+        <tr class="x"><td>197 mm</td><td>31</td><td>Kids 12</td><td>&mdash;</td><td>11</td></tr>
+        <tr class="x"><td>198 mm</td><td>31</td><td>Kids 12</td><td>&mdash;</td><td>11</td></tr>
+        <tr class="x"><td>199 mm</td><td>31.5</td><td>Kids 12</td><td>&mdash;</td><td>11</td></tr>
+        <tr class="x"><td>200 mm</td><td>31.5</td><td>Kids 12</td><td>&mdash;</td><td>11</td></tr>
+        <tr class="x"><td>201 mm</td><td>31.5</td><td>Kids 12.5</td><td>&mdash;</td><td>11.5</td></tr>
+        <tr class="x"><td>202 mm</td><td>32</td><td>Kids 12.5</td><td>&mdash;</td><td>11.5</td></tr>
+        <tr class="x"><td>203 mm</td><td>32</td><td>Kids 12.5</td><td>&mdash;</td><td>11.5</td></tr>
+        <tr class="x"><td>204 mm</td><td>32</td><td>Kids 12.5</td><td>&mdash;</td><td>11.5</td></tr>
+        <tr class="x"><td>205 mm</td><td>32</td><td>Kids 13</td><td>&mdash;</td><td>12</td></tr>
+        <tr class="x"><td>206 mm</td><td>32.5</td><td>Kids 13</td><td>&mdash;</td><td>12</td></tr>
+        <tr class="x"><td>207 mm</td><td>32.5</td><td>Youth 0</td><td>&mdash;</td><td>12</td></tr>
+        <tr class="x"><td>208 mm</td><td>32.5</td><td>Youth 0</td><td>&mdash;</td><td>12</td></tr>
+        <tr class="x"><td>209 mm</td><td>33</td><td>Youth 0.5</td><td>&mdash;</td><td>12.5</td></tr>
+        <tr class="x"><td>210 mm</td><td>33</td><td>Youth 0.5</td><td>&mdash;</td><td>12.5</td></tr>
+        <tr class="x"><td>211 mm</td><td>33</td><td>Youth 0.5</td><td>&mdash;</td><td>12.5</td></tr>
+        <tr class="x"><td>212 mm</td><td>33.5</td><td>Youth 0.5</td><td>&mdash;</td><td>12.5</td></tr>
+        <tr class="x"><td>213 mm</td><td>33.5</td><td>Youth 1</td><td>&mdash;</td><td>13</td></tr>
+        <tr class="x"><td>214 mm</td><td>33.5</td><td>Youth 1</td><td>&mdash;</td><td>13</td></tr>
+        <tr class="x"><td>215 mm</td><td>34</td><td>Youth 1</td><td>&mdash;</td><td>13</td></tr>
+        <tr class="x"><td>216 mm</td><td>34</td><td>Youth 1</td><td>&mdash;</td><td>13</td></tr>
+        <tr class="x"><td>217 mm</td><td>34</td><td>Youth 1</td><td>&mdash;</td><td>13</td></tr>
+        <tr class="x"><td>218 mm</td><td>34</td><td>Youth 1.5</td><td>&mdash;</td><td>13.5</td></tr>
+        <tr class="x"><td>219 mm</td><td>34.5</td><td>Youth 1.5</td><td>&mdash;</td><td>13.5</td></tr>
+        <tr class="x"><td>220 mm</td><td>34.5</td><td>Youth 1.5</td><td>&mdash;</td><td>13.5</td></tr>
+        <tr class="x"><td>221 mm</td><td>34.5</td><td>Youth 1.5</td><td>&mdash;</td><td>13.5</td></tr>
+        <tr class="x"><td>222 mm</td><td>35</td><td>Youth 2</td><td>&mdash;</td><td>14</td></tr>
+        <tr class="x"><td>223 mm</td><td>35</td><td>Youth 2</td><td>&mdash;</td><td>14</td></tr>
+        <tr class="x"><td>224 mm</td><td>35</td><td>Youth 2</td><td>&mdash;</td><td>14</td></tr>
+        <tr class="x"><td>225 mm</td><td>35</td><td>Youth 2</td><td>&mdash;</td><td>14</td></tr>
+        <tr class="x"><td>226 mm</td><td>35.5</td><td>Youth 2.5</td><td>&mdash;</td><td>14.5</td></tr>
+        <tr class="x"><td>227 mm</td><td>35.5</td><td>Youth 2.5</td><td>&mdash;</td><td>14.5</td></tr>
+        <tr class="x"><td>228 mm</td><td>35.5</td><td>Youth 2.5</td><td>&mdash;</td><td>14.5</td></tr>
+        <tr class="x"><td>229 mm</td><td>36</td><td>Youth 2.5</td><td>&mdash;</td><td>14.5</td></tr>
+        <tr class="x"><td>230 mm</td><td>36</td><td>Youth 3</td><td>&mdash;</td><td>15</td></tr>
+        <tr class="x"><td>231 mm</td><td>36</td><td>Youth 3</td><td>&mdash;</td><td>15</td></tr>
+        <tr class="x"><td>232 mm</td><td>36.5</td><td>Youth 3</td><td>&mdash;</td><td>15</td></tr>
+        <tr class="x"><td>233 mm</td><td>36.5</td><td>Youth 3</td><td>&mdash;</td><td>15</td></tr>
+        <tr class="x"><td>234 mm</td><td>36.5</td><td>Youth 3</td><td>&mdash;</td><td>15</td></tr>
+        <tr class="x"><td>235 mm</td><td>37</td><td>Youth 3.5</td><td>&mdash;</td><td>15.5</td></tr>
+        <tr class="x"><td>236 mm</td><td>37.5</td><td>5.5</td><td>7</td><td>4.5</td></tr>
+        <tr class="x"><td>237 mm</td><td>37.5</td><td>5.5</td><td>7</td><td>4.5</td></tr>
+        <tr class="x"><td>238 mm</td><td>37.5</td><td>6</td><td>7.5</td><td>5</td></tr>
+        <tr class="x"><td>239 mm</td><td>38</td><td>6</td><td>7.5</td><td>5</td></tr>
+        <tr class="x"><td>240 mm</td><td>38</td><td>6</td><td>7.5</td><td>5</td></tr>
+        <tr class="x"><td>241 mm</td><td>38</td><td>6</td><td>7.5</td><td>5</td></tr>
+        <tr class="x"><td>242 mm</td><td>38.5</td><td>6</td><td>7.5</td><td>5</td></tr>
+        <tr class="x"><td>243 mm</td><td>38.5</td><td>6.5</td><td>8</td><td>5.5</td></tr>
+        <tr class="x"><td>244 mm</td><td>38.5</td><td>6.5</td><td>8</td><td>5.5</td></tr>
+        <tr class="x"><td>245 mm</td><td>39</td><td>6.5</td><td>8</td><td>5.5</td></tr>
+        <tr class="x"><td>246 mm</td><td>39</td><td>6.5</td><td>8</td><td>5.5</td></tr>
+        <tr class="x"><td>247 mm</td><td>39</td><td>6.5</td><td>8</td><td>5.5</td></tr>
+        <tr class="x"><td>248 mm</td><td>39</td><td>7</td><td>8.5</td><td>6</td></tr>
+        <tr class="x"><td>249 mm</td><td>39.5</td><td>7</td><td>8.5</td><td>6</td></tr>
+        <tr class="x"><td>250 mm</td><td>39.5</td><td>7</td><td>8.5</td><td>6</td></tr>
+        <tr class="x"><td>251 mm</td><td>39.5</td><td>7</td><td>8.5</td><td>6</td></tr>
+        <tr class="x"><td>252 mm</td><td>40</td><td>7</td><td>8.5</td><td>6</td></tr>
+        <tr class="x"><td>253 mm</td><td>40</td><td>7.5</td><td>9</td><td>6.5</td></tr>
+        <tr class="x"><td>254 mm</td><td>40</td><td>7.5</td><td>9</td><td>6.5</td></tr>
+        <tr class="x"><td>255 mm</td><td>40</td><td>7.5</td><td>9</td><td>6.5</td></tr>
+        <tr class="x"><td>256 mm</td><td>40.5</td><td>7.5</td><td>9</td><td>6.5</td></tr>
+        <tr class="x"><td>257 mm</td><td>40.5</td><td>7.5</td><td>9</td><td>6.5</td></tr>
+        <tr class="x"><td>258 mm</td><td>40.5</td><td>8</td><td>9.5</td><td>7</td></tr>
+        <tr class="x"><td>259 mm</td><td>41</td><td>8</td><td>9.5</td><td>7</td></tr>
+        <tr class="x"><td>260 mm</td><td>41</td><td>8</td><td>9.5</td><td>7</td></tr>
+        <tr class="x"><td>261 mm</td><td>41</td><td>8</td><td>9.5</td><td>7</td></tr>
+        <tr class="x"><td>262 mm</td><td>41.5</td><td>8</td><td>9.5</td><td>7</td></tr>
+        <tr class="x"><td>263 mm</td><td>41.5</td><td>8.5</td><td>10</td><td>7.5</td></tr>
+        <tr class="x"><td>264 mm</td><td>41.5</td><td>8.5</td><td>10</td><td>7.5</td></tr>
+        <tr class="x"><td>265 mm</td><td>42</td><td>8.5</td><td>10</td><td>7.5</td></tr>
+        <tr class="x"><td>266 mm</td><td>42</td><td>8.5</td><td>10</td><td>7.5</td></tr>
+        <tr class="x"><td>267 mm</td><td>42</td><td>8.5</td><td>10</td><td>7.5</td></tr>
+        <tr class="x"><td>268 mm</td><td>42</td><td>9</td><td>10.5</td><td>8</td></tr>
+        <tr class="x"><td>269 mm</td><td>42.5</td><td>9</td><td>10.5</td><td>8</td></tr>
+        <tr class="x"><td>270 mm</td><td>42.5</td><td>9</td><td>10.5</td><td>8</td></tr>
+        <tr class="x"><td>271 mm</td><td>42.5</td><td>9</td><td>10.5</td><td>8</td></tr>
+        <tr class="x"><td>272 mm</td><td>43</td><td>9</td><td>10.5</td><td>8</td></tr>
+        <tr class="x"><td>273 mm</td><td>43</td><td>9.5</td><td>11</td><td>8.5</td></tr>
+        <tr class="x"><td>274 mm</td><td>43</td><td>9.5</td><td>11</td><td>8.5</td></tr>
+        <tr class="x"><td>275 mm</td><td>43</td><td>9.5</td><td>11</td><td>8.5</td></tr>
+        <tr class="x"><td>276 mm</td><td>43.5</td><td>9.5</td><td>11</td><td>8.5</td></tr>
+        <tr class="x"><td>277 mm</td><td>43.5</td><td>9.5</td><td>11</td><td>8.5</td></tr>
+        <tr class="x"><td>278 mm</td><td>43.5</td><td>10</td><td>11.5</td><td>9</td></tr>
+        <tr class="x"><td>279 mm</td><td>44</td><td>10</td><td>11.5</td><td>9</td></tr>
+        <tr class="x"><td>280 mm</td><td>44</td><td>10</td><td>11.5</td><td>9</td></tr>
+        <tr class="x"><td>281 mm</td><td>44</td><td>10</td><td>11.5</td><td>9</td></tr>
+        <tr class="x"><td>282 mm</td><td>44.5</td><td>10</td><td>11.5</td><td>9</td></tr>
+        <tr class="x"><td>283 mm</td><td>44.5</td><td>10.5</td><td>12</td><td>9.5</td></tr>
+        <tr class="x"><td>284 mm</td><td>44.5</td><td>10.5</td><td>12</td><td>9.5</td></tr>
+        <tr class="x"><td>285 mm</td><td>45</td><td>10.5</td><td>12</td><td>9.5</td></tr>
+        <tr class="x"><td>286 mm</td><td>45</td><td>10.5</td><td>12</td><td>9.5</td></tr>
+        <tr class="x"><td>287 mm</td><td>45</td><td>10.5</td><td>12</td><td>9.5</td></tr>
+        <tr class="x"><td>288 mm</td><td>45</td><td>11</td><td>12.5</td><td>10</td></tr>
+        <tr class="x"><td>289 mm</td><td>45.5</td><td>11</td><td>12.5</td><td>10</td></tr>
+        <tr class="x"><td>290 mm</td><td>45.5</td><td>11</td><td>12.5</td><td>10</td></tr>
+        <tr class="x"><td>291 mm</td><td>45.5</td><td>11</td><td>12.5</td><td>10</td></tr>
+        <tr class="x"><td>292 mm</td><td>46</td><td>11</td><td>12.5</td><td>10</td></tr>
+        <tr class="x"><td>293 mm</td><td>46</td><td>11.5</td><td>13</td><td>10.5</td></tr>
+        <tr class="x"><td>294 mm</td><td>46</td><td>11.5</td><td>13</td><td>10.5</td></tr>
+        <tr class="x"><td>295 mm</td><td>46</td><td>11.5</td><td>13</td><td>10.5</td></tr>
+        <tr class="x"><td>296 mm</td><td>46.5</td><td>11.5</td><td>13</td><td>10.5</td></tr>
+        <tr class="x"><td>297 mm</td><td>46.5</td><td>11.5</td><td>13</td><td>10.5</td></tr>
+        <tr class="x"><td>298 mm</td><td>46.5</td><td>12</td><td>13.5</td><td>11</td></tr>
+        <tr class="x"><td>299 mm</td><td>47</td><td>12</td><td>13.5</td><td>11</td></tr>
+        <tr class="x"><td>300 mm</td><td>47</td><td>12</td><td>13.5</td><td>11</td></tr>
+        <tr class="x"><td>301 mm</td><td>47</td><td>12</td><td>13.5</td><td>11</td></tr>
+        <tr class="x"><td>302 mm</td><td>47.5</td><td>12</td><td>13.5</td><td>11</td></tr>
+        <tr class="x"><td>303 mm</td><td>47.5</td><td>12.5</td><td>14</td><td>11.5</td></tr>
+        <tr class="x"><td>304 mm</td><td>47.5</td><td>12.5</td><td>14</td><td>11.5</td></tr>
+        <tr class="x"><td>305 mm</td><td>48</td><td>12.5</td><td>14</td><td>11.5</td></tr>
+        <tr class="x"><td>306 mm</td><td>48</td><td>12.5</td><td>14</td><td>11.5</td></tr>
+        <tr class="x"><td>307 mm</td><td>48</td><td>12.5</td><td>14</td><td>11.5</td></tr>
+        <tr class="x"><td>308 mm</td><td>48</td><td>13</td><td>14.5</td><td>12</td></tr>
+        <tr class="x"><td>309 mm</td><td>48.5</td><td>13</td><td>14.5</td><td>12</td></tr>
+        <tr class="x"><td>310 mm</td><td>48.5</td><td>13</td><td>14.5</td><td>12</td></tr>
+        <tr class="x"><td>311 mm</td><td>48.5</td><td>13</td><td>14.5</td><td>12</td></tr>
+        <tr class="x"><td>312 mm</td><td>49</td><td>13</td><td>14.5</td><td>12</td></tr>
+        <tr class="x"><td>313 mm</td><td>49</td><td>13.5</td><td>15</td><td>12.5</td></tr>
+        <tr class="x"><td>314 mm</td><td>49</td><td>13.5</td><td>15</td><td>12.5</td></tr>
+        <tr class="x"><td>315 mm</td><td>49</td><td>13.5</td><td>15</td><td>12.5</td></tr>
+        <tr class="x"><td>316 mm</td><td>49.5</td><td>13.5</td><td>15</td><td>12.5</td></tr>
+        <tr class="x"><td>317 mm</td><td>49.5</td><td>13.5</td><td>15</td><td>12.5</td></tr>
+        <tr class="x"><td>318 mm</td><td>49.5</td><td>14</td><td>15.5</td><td>13</td></tr>
+        <tr class="x"><td>319 mm</td><td>50</td><td>14</td><td>15.5</td><td>13</td></tr>
+        <tr class="x"><td>320 mm</td><td>50</td><td>14</td><td>15.5</td><td>13</td></tr>
+        <tr class="x"><td>321 mm</td><td>50</td><td>14</td><td>15.5</td><td>13</td></tr>
+        <tr class="x"><td>322 mm</td><td>50.5</td><td>14</td><td>15.5</td><td>13</td></tr>
+        <tr class="x"><td>323 mm</td><td>50.5</td><td>14.5</td><td>16</td><td>13.5</td></tr>
+        <tr class="x"><td>324 mm</td><td>50.5</td><td>14.5</td><td>16</td><td>13.5</td></tr>
+        <tr class="x"><td>325 mm</td><td>51</td><td>14.5</td><td>16</td><td>13.5</td></tr>
+        <tr class="x"><td>326 mm</td><td>51</td><td>14.5</td><td>16</td><td>13.5</td></tr>
+        <tr class="x"><td>327 mm</td><td>51</td><td>14.5</td><td>16</td><td>13.5</td></tr>
+        <tr class="x"><td>328 mm</td><td>51</td><td>15</td><td>16.5</td><td>14</td></tr>
+        <tr class="x"><td>329 mm</td><td>51.5</td><td>15</td><td>16.5</td><td>14</td></tr>
+        <tr class="x"><td>330 mm</td><td>51.5</td><td>15</td><td>16.5</td><td>14</td></tr>
+        <tr class="x"><td>331 mm</td><td>51.5</td><td>15</td><td>16.5</td><td>14</td></tr>
+        <tr class="x"><td>332 mm</td><td>52</td><td>15</td><td>16.5</td><td>14</td></tr>
+        <tr class="x"><td>333 mm</td><td>52</td><td>15.5</td><td>17</td><td>14.5</td></tr>
+        <tr class="x"><td>334 mm</td><td>52</td><td>15.5</td><td>17</td><td>14.5</td></tr>
+        <tr class="x"><td>335 mm</td><td>52</td><td>15.5</td><td>17</td><td>14.5</td></tr>
+        <tr class="x"><td>336 mm</td><td>52.5</td><td>15.5</td><td>17</td><td>14.5</td></tr>
+        <tr class="x"><td>337 mm</td><td>52.5</td><td>15.5</td><td>17</td><td>14.5</td></tr>
+        <tr class="x"><td>338 mm</td><td>52.5</td><td>16</td><td>17.5</td><td>15</td></tr>
+        <tr class="x"><td>339 mm</td><td>53</td><td>16</td><td>17.5</td><td>15</td></tr>
+        <tr class="x"><td>340 mm</td><td>53</td><td>16</td><td>17.5</td><td>15</td></tr>
+        <tr class="x"><td>341 mm</td><td>53</td><td>16</td><td>17.5</td><td>15</td></tr>
+        <tr class="x"><td>342 mm</td><td>53.5</td><td>16</td><td>17.5</td><td>15</td></tr>
+        <tr class="x"><td>343 mm</td><td>53.5</td><td>16.5</td><td>18</td><td>15.5</td></tr>
+        <tr class="x"><td>344 mm</td><td>53.5</td><td>16.5</td><td>18</td><td>15.5</td></tr>
+        <tr class="x"><td>345 mm</td><td>54</td><td>16.5</td><td>18</td><td>15.5</td></tr>
+        <tr class="x"><td>346 mm</td><td>54</td><td>16.5</td><td>18</td><td>15.5</td></tr>
+        <tr class="x"><td>347 mm</td><td>54</td><td>16.5</td><td>18</td><td>15.5</td></tr>
+        <tr class="x"><td>348 mm</td><td>54</td><td>17</td><td>18.5</td><td>16</td></tr>
+        <tr class="x"><td>349 mm</td><td>54.5</td><td>17</td><td>18.5</td><td>16</td></tr>
+        <tr class="x"><td>350 mm</td><td>54.5</td><td>17</td><td>18.5</td><td>16</td></tr>
+        <tr class="x"><td>351 mm</td><td>54.5</td><td>17</td><td>18.5</td><td>16</td></tr>
+        <tr class="x"><td>352 mm</td><td>55</td><td>17</td><td>18.5</td><td>16</td></tr>
+        <tr class="x"><td>353 mm</td><td>55</td><td>17.5</td><td>19</td><td>16.5</td></tr>
+        <tr class="x"><td>354 mm</td><td>55</td><td>17.5</td><td>19</td><td>16.5</td></tr>
+        <tr class="x"><td>355 mm</td><td>55</td><td>17.5</td><td>19</td><td>16.5</td></tr>
+        <tr class="x"><td>356 mm</td><td>55.5</td><td>17.5</td><td>19</td><td>16.5</td></tr>
+        <tr class="x"><td>357 mm</td><td>55.5</td><td>17.5</td><td>19</td><td>16.5</td></tr>
+        <tr class="x"><td>358 mm</td><td>55.5</td><td>18</td><td>19.5</td><td>17</td></tr>
+        <tr class="x"><td>359 mm</td><td>56</td><td>18</td><td>19.5</td><td>17</td></tr>
+        <tr class="x"><td>360 mm</td><td>56</td><td>18</td><td>19.5</td><td>17</td></tr>
+        <tr class="x"><td>361 mm</td><td>56</td><td>18</td><td>19.5</td><td>17</td></tr>
+        <tr class="x"><td>362 mm</td><td>56.5</td><td>18</td><td>19.5</td><td>17</td></tr>
+        <tr class="x"><td>363 mm</td><td>56.5</td><td>18.5</td><td>20</td><td>17.5</td></tr>
+        <tr class="x"><td>364 mm</td><td>56.5</td><td>18.5</td><td>20</td><td>17.5</td></tr>
+        <tr class="x"><td>365 mm</td><td>57</td><td>18.5</td><td>20</td><td>17.5</td></tr>
+        <tr class="x"><td>366 mm</td><td>57</td><td>18.5</td><td>20</td><td>17.5</td></tr>
+        <tr class="x"><td>367 mm</td><td>57</td><td>18.5</td><td>20</td><td>17.5</td></tr>
+        <tr class="x"><td>368 mm</td><td>57</td><td>19</td><td>20.5</td><td>18</td></tr>
+        <tr class="x"><td>369 mm</td><td>57.5</td><td>19</td><td>20.5</td><td>18</td></tr>
+        <tr class="x"><td>370 mm</td><td>57.5</td><td>19</td><td>20.5</td><td>18</td></tr>
+        <tr class="x"><td>371 mm</td><td>57.5</td><td>19</td><td>20.5</td><td>18</td></tr>
+        <tr class="x"><td>372 mm</td><td>58</td><td>19</td><td>20.5</td><td>18</td></tr>
+        <tr class="x"><td>373 mm</td><td>58</td><td>19.5</td><td>21</td><td>18.5</td></tr>
+        <tr class="x"><td>374 mm</td><td>58</td><td>19.5</td><td>21</td><td>18.5</td></tr>
+        <tr class="x"><td>375 mm</td><td>58</td><td>19.5</td><td>21</td><td>18.5</td></tr>
+        <tr class="x"><td>376 mm</td><td>58.5</td><td>19.5</td><td>21</td><td>18.5</td></tr>
+        <tr class="x"><td>377 mm</td><td>58.5</td><td>19.5</td><td>21</td><td>18.5</td></tr>
+        <tr class="x"><td>378 mm</td><td>58.5</td><td>20</td><td>21.5</td><td>19</td></tr>
+        <tr class="x"><td>379 mm</td><td>59</td><td>20</td><td>21.5</td><td>19</td></tr>
+        <tr class="x"><td>380 mm</td><td>59</td><td>20</td><td>21.5</td><td>19</td></tr>
+        <tr class="x"><td>381 mm</td><td>59</td><td>20</td><td>21.5</td><td>19</td></tr>
+        <tr class="x"><td>382 mm</td><td>59.5</td><td>20</td><td>21.5</td><td>19</td></tr>
+        <tr class="x"><td>383 mm</td><td>59.5</td><td>20.5</td><td>22</td><td>19.5</td></tr>
+        <tr class="x"><td>384 mm</td><td>59.5</td><td>20.5</td><td>22</td><td>19.5</td></tr>
+        <tr class="x"><td>385 mm</td><td>60</td><td>20.5</td><td>22</td><td>19.5</td></tr>
+        <tr class="x"><td>386 mm</td><td>60</td><td>20.5</td><td>22</td><td>19.5</td></tr>
+        <tr class="x"><td>387 mm</td><td>60</td><td>20.5</td><td>22</td><td>19.5</td></tr>
+        <tr class="x"><td>388 mm</td><td>60</td><td>21</td><td>22.5</td><td>20</td></tr>
+        <tr class="x"><td>389 mm</td><td>60.5</td><td>21</td><td>22.5</td><td>20</td></tr>
+        <tr class="x"><td>390 mm</td><td>60.5</td><td>21</td><td>22.5</td><td>20</td></tr>
+        <tr class="x"><td>391 mm</td><td>60.5</td><td>21</td><td>22.5</td><td>20</td></tr>
+        <tr class="x"><td>392 mm</td><td>61</td><td>21</td><td>22.5</td><td>20</td></tr>
+        <tr class="x"><td>393 mm</td><td>61</td><td>21.5</td><td>23</td><td>20.5</td></tr>
+        <tr class="x"><td>394 mm</td><td>61</td><td>21.5</td><td>23</td><td>20.5</td></tr>
+        <tr class="x"><td>395 mm</td><td>61</td><td>21.5</td><td>23</td><td>20.5</td></tr>
+        <tr class="x"><td>396 mm</td><td>61.5</td><td>21.5</td><td>23</td><td>20.5</td></tr>
+        <tr class="x"><td>397 mm</td><td>61.5</td><td>21.5</td><td>23</td><td>20.5</td></tr>
+        <tr class="x"><td>398 mm</td><td>61.5</td><td>22</td><td>23.5</td><td>21</td></tr>
+        <tr class="x"><td>399 mm</td><td>62</td><td>22</td><td>23.5</td><td>21</td></tr>
+        <tr class="x"><td>400 mm</td><td>62</td><td>22</td><td>23.5</td><td>21</td></tr>
+      </tbody>
+    </table></div>
+    <button type="button" class="btn" id="szb" style="margin-top:16px" aria-expanded="false" aria-controls="szt">Show more sizes</button>
+    <p class="note">Every size from a 100 mm baby foot to 400 mm, 1 mm at a time. Tap Show more sizes to see them all. Between sizes, go up a half size. The knit upper stretches about 3 mm after the first week.</p>
+  </div></section>
+
+  <section id="shipping"><div class="w">
+    <div class="sec-h"><h2>Shipping and returns</h2><p>We ship to the USA and Canada only. Orders over $100 ship free. Everything else is a flat $9.</p></div>
+    <div class="specs">
+      <div class="spec"><b>Dispatch in 2 business days</b><span>Tracked delivery, usually 3 to 6 days across Canada and the USA. We don't ship to other countries yet.</span></div>
+      <div class="spec"><b>30-day returns</b><span>Wear them indoors for a week. If they don't fit, send them back for a refund.</span></div>
+      <div class="spec"><b>12-month warranty</b><span>Sole separation and stitching failures are replaced, no receipt hunt.</span></div>
+    </div>
+  </div></section>
+
+  <section id="contact" style="background:var(--grey)"><div class="w">
+    <div class="sec-h"><h2>Contact us</h2><p>Questions about fit, an order, or wholesale? Send a message and we will reply by email.</p></div>
+    <form class="form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+      <label for="c-name">Your name<input id="c-name" name="name" type="text" required autocomplete="name"></label>
+      <label for="c-email">Your email<input id="c-email" name="email" type="email" required autocomplete="email"></label>
+      <label for="c-msg">Message<textarea id="c-msg" name="message" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </div></section>
+</main>
+
+<footer><div class="w">
+  <div class="fgrid">
+    <div><div class="fbrand">CHAIRO<b>BOOST</b></div></div>
+    <div><h4>Shop</h4><ul><li><a href="#shoes">All shoes</a></li><li><a href="#sizing">Size guide</a></li><li><a href="#build">How they're built</a></li></ul></div>
+    <div><h4>Help</h4><ul><li><a href="#shipping">Shipping</a></li><li><a href="#shipping">Returns</a></li><li><a href="#contact">Contact us</a></li></ul></div>
+    <div><h4>Chairoboost</h4><ul><li><a href="#top">Home</a></li><li><a href="#build">Our build</a></li></ul></div>
+  </div>
+  <p class="legal">&copy; 2026 Chairoboost. All rights reserved. The Chairoboost name, logo, product designs, text, and images on this site belong to Chairoboost and may not be copied, reproduced, or used without written permission. Other brand names mentioned belong to their owners. Prices and availability may change without notice. We ship to the USA and Canada only.</p>
+</div></footer>
+<script>(function(){var t=document.getElementById("szt"),b=document.getElementById("szb");if(!t||!b)return;b.addEventListener("click",function(){var o=t.classList.toggle("open");b.textContent=o?"Show less":"Show more sizes";b.setAttribute("aria-expanded",o);if(!o){t.scrollTop=0;t.scrollIntoView({block:"nearest"})}})})();</script>
+</body>
+</html>
